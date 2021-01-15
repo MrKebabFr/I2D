@@ -52,5 +52,5 @@ while True:                              # boucle infinie
     
     else                                 # sinon
         print('Mode automatique')        # afficher un texte
-        Mode_auto(0.5)                   # appel de la fonction Mode_auto
+        Mode_auto(5)                     # appel de la fonction Mode_auto
 
