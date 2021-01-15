@@ -24,7 +24,7 @@ def Mode_manuel():
     if (etatbp == 0):                                      # test de cette variable et se demander si elle est nulle
         print('Bouton relache')                            # si oui afficher un texte
         GPIO.output(buzzer, GPIO.LOW)                      # et arreter le buzzer
-    else                                                   # sinon
+    else:                                                   # sinon
         print('Bouton appuyee')                            # afficher un texte
         GPIO.output(buzzer, GPIO.HIGH)                     # et faire sonner le buzzer
 
@@ -35,7 +35,7 @@ def Mode_auto(temps):
     if (etatpir == 0):                               # test de cette variable et se demander si elle est nulle
         print('Aucune detection')                    # si oui afficher un texte
         GPIO.output(buzzer, GPIO.LOW)                # et arreter le buzzer
-    else                                             # sinon
+    else:                                             # sinon
         print('Dectection')                          # afficher un texte
         GPIO.output(buzzer, GPIO.HIGH)               # et faire sonner le buzzer en alternance (4 lignes)
         time.sleep(temps)
@@ -50,7 +50,7 @@ while True:                              # boucle infinie
         print ("Mode manuel")            # si oui afficher un texte
         Mode_manuel()                    # appel de la fonction Mode_manuel
     
-    else                                 # sinon
+    else:                                 # sinon
         print('Mode automatique')        # afficher un texte
         Mode_auto(5)                     # appel de la fonction Mode_auto
 
